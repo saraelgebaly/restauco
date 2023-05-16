@@ -8,6 +8,10 @@ body{
     overflow-x: hidden;
     
 }
+@media screen and (min-width: 0px) and (max-width:980px){
+    body{
+    height: 4630px;
+        overflow-x: hidden;}
 body.dark-mode {
     background-color: black;
     color:#4D312C;
