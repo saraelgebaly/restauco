@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+    />
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.css"
+    rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="style2.css">
+    
+</head>
+<body>
+   
+    <div class="head col-lg-6 col-md-6 col-sm-12">
+    <nav class="navbar navbar-expand-lg navbar-light naaav">
+        <div class="container-fluid navdiv">
+        <a class="navbar-brand" href="#">
+            <img
+              src="logo.png.webp"
+              class="me-2"
+              height="50"
+              alt="MDB Logo"
+              loading="lazy"
+            />
+          
+          </a>
+          <i onclick="myfunction()" id="dark" class="fa-solid fa-moon"></i>
+        <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        >
+        <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li>
+            <a  aria-current="page" href="index.html" target="_blank">Home</a>
+          </li>
+          <li>
+            <a  href="#">Menu</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a  href="#">Blog</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+          
+          
+        </ul>
+        </div>
+        </div>
+        </nav>
+    </div>
+<section>
+<div class="contact-us">
+    <div class="error" id="error"></div>
+    <h1>Contact us</h1>
+    <form   onsubmit="return formValidate()">
+        <input type="text" id="name" placeholder="Your Name" name="name"> 
+        <input type="email" id="email" placeholder="Your Email" name="email">
+        <input type="text" placeholder="Your Phone">
+        <textarea name="" id="message" cols="30" rows="5" placeholder="Write a Message">
+
+        </textarea>
+        <input onclick="sendMail()" type="submit"class="submit" value="Send" name="send">
+    </form>
+    
+
+
+</div>
+</section>
+<section class=" last-sec">
+  <div class="row">
+  <div class="col-lg-3 col-md-6 col-sm-12 footer">
+  <a href=""> <img src="logo.png.webp" alt="" class="img-footer"></a>
+    <h1>Land behold it created good saw after she'd Our set living. Signs midst dominion creepeth morning laboris nisi ufsit aliquip</h1>
+    <a href="" class="me-4 text-reset">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="" class="me-4 text-reset">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a href="" class="me-4 text-reset">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="" class="me-4 text-reset">
+      <i class="fa-brands fa-pinterest"></i>
+    </a>
+  </div>
+  <div class="col-lg-2 col-md-6 col-sm-12 footer">
+    <h6 class="text-uppercase fw-bold mb-4">
+      Quick Links
+    </h6>
+    <p>
+      <a href="#!" class="text-reset">Home</a>
+    </p>
+    <p>
+      <a href="#!" class="text-reset">About</a>
+    </p>
+    <p>
+      <a href="#!" class="text-reset">Services</a>
+    </p>
+    <p>
+      <a href="#!" class="text-reset">Blog</a>
+    </p>
+  </div>
+  <div class="col-lg-2 col-md-6 col-sm-12 footer">
+    <h6 class="text-uppercase fw-bold mb-4">
+      Cakes
+    </h6>
+    <p>
+      <a href="#!" class="text-reset">Blackforest</a>
+    </p>
+    <p>
+      <a href="#!" class="text-reset">Bodhubon</a>
+    </p>
+    <p>
+      <a href="#!" class="text-reset">Rongdhonu</a>
+    </p>
+    <p>
+      <a href="#!" class="text-reset">Meghrong</a>
+    </p>
+  </div>
+  <div class="col-lg-2 col-md-6 col-sm-12 footer">
+    <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+    <a href=""><p>9st,maadi,cairo,Egypt</p></a> 
+    <p>
+      restaurco89@gmail.com
+    </p>
+  <a href=""> <p>0155862295</p></a> 
+  <div class="map" id="map"></div>
+  </div>
+  </div>
+  <p>Copyright ©2023 All rights reserved | This template is made with Love by Colorlib</p>
+  </section>
+  <script async
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbU926FO9jcO3Cxm6ar59ikfcaS2teZ7s&callback=initMap">
+</script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("t_eR8-JuyQv0G9E88");
+   })();
+</script>
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.js"
+    ></script>
+    <script src="main2.js"></script>
+</body>
+</html>
